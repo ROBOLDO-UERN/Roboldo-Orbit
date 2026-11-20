@@ -1,0 +1,11 @@
+name: Orbit Core CI/CD
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  orbit-ci:
+    uses: ROBOLDO-UERN/.github/.github/workflows/reusable-python-ci.yml@main
